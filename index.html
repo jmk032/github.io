@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Jeon Min Gyu Portfolio</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_USER_ID");
+   })();
+    
+</script>
+	<script type="text/javascript">
+      var host = "thisiswk.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+  </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+<style>
+body {
+    font-family: "Montserrat", "Noto sans KR", "Lato", "Open Sans", sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        height: 100%;
+        margin-bottom: 0;
+        -ms-overflow-style: none;
+    }
+    
+body::-webkit-scrollbar { display:none; }
+
+    
+    .stop-scroll{
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    .head_logo {
+        overflow: visible;
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        top: 0;
+        max-height: 10%;
+        width: 100%;
+        margin: auto;
+    }
+    .head_logo img {
+        max-height: 50px;
+        width: auto;
+        margin: 2% auto 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .portfolio {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin-top: -5%;
+    }
+    
+    .left {
+        font: "Noto sans KR";
+        font-weight: 500;
+        display: block;
+        width: 15%;
+        height: 100%;
+        left: 5%;
+        top: 30%;
+        position: fixed;
+        background-color: rgba(0,0,0,0);
+        padding-top: 0;
+        color: #8d9092;
+
+        vertical-align: center;
+    }
+    
+    .left span {
+        font-size: 0.7em;
+        margin: 0 2px;
+        text-align: center;
+        opacity: 0;
+        text-decoration: none;
+    }
+    
+
+    
+    .left h1 {
+        font-family: "Open sans" sans-serif;
+        font-size: 1em;
+        color: #cc0066;
+        margin: 0px;
+    }
+    
+    .left h3 {
+        margin: 0px;
+        text-align: left;
+        color: #8d9092;
+        font: "Open Sans";
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    .left .plusbtn {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    .left .about {
+        font-size: 0.3em;
+        vertical-align: middle;
+    }
+    
+    
+    
+    
+    
+    
+    .resumedown {
+        text-decoration: none;
+        color: #cc0066;
+    }
+    
+    .resumedown:hover span{
+        opacity: 1;
+    }
+    
+    
+    .showreel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+   
+    .left_line {
+        text-align: left;
+        margin-left: 0;
+        max-width: 50px;
+        border-top: 1px solid #cc0066;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    
+    
+    .right_line{
+        text-align: right;
+        margin-right: 5px;
+        max-width: 50px;
+        border-top: 1px solid #1691b2;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    .row {
+        display: block;
+        margin: 0;
+    }
+    
+    .third {
+        display: block;
+        text-align: center;
+        margin: 0; 
+        width: 100%;
+        float: inherit;
+    }
+    
+    .third img:hover {
+        opacity: 1
+    }
+    
+    .showreel:hover .showreel_thumnail {
+        opacity: 0.7;
+    }
+    
+    .showreel:hover .showreel_overlay {
+        opacity: 1;
+    }
+    
+   
+    
+    
+    .portfolio h1, h2 {font-size: 30px;
+        color: #eee;
+    }
+    
+    .portfolio h2 {margin-top: -6px;}
+    .portfolio h4 {
+        color: #666;
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 24px;
+        margin-bottom: -2px;
+    }
+
+    
+    
+    
+    
+    .scroll-downs {
+  position: fixed;
+  top: 75%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :34px;
+  height: 55px;
+        z-index: 3;
+}
+    
+    
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #8d9092;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+    
+    
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #8d9092;
+  animation-name: scroll;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+    
+    
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+    
+    .icons {
+        display: inline-block;
+        max-width: 30%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        transform: translate(-50%);
+        transform: translateY(-100%);
+    }
+    
+    .icons svg:hover {
+        fill: #cc0066;
+    }
+    
+    .mail_icon {
+        padding: 0;
+        fill: #8d9092;
+        width: 20%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .phone_icon {
+        padding: 0;
+        fill: #8d9092;
+        width: 20%;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    
+    section {
+            margin-bottom: 30px;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            min-height: 100%;
+            height: 100%;
+    }
+    
+    .Quick-navigation {
+        position: fixed;
+        text-align: right;
+        z-index: 2;
+        margin: 0;
+        top: 46%;
+        right: 3%;
+        transform: translateY(-50%);
+    }
+    
+    .Quick-navigation-item {
+        text-align: right;
+        font: "Lato";
+        font-weight: 300;
+        color: #8d9092;
+        text-decoration: none;
+        font-size: 0.7em;
+        transition: color 0.3s;
+        padding: 3px;
+        display: block;
+    }
+    
+    .Quick-navigation-item:hover {
+        font-weight: 600;
+        font-size: 0.7em;
+    }
+    
+.Quick-navigation-item.current {
+        color: #1691b2;
+        font-weight: 600;
+        font-size: 0.8em;
+    }
+    
+    .Scroll-progress-indicator {
+  will-change: opacity, transform;
+    color: #1691b2;
+  transition: all 0.5s;
+  right: -10px;
+  border-radius: 0px;
+  position: absolute;
+  top: -10px;
+  opacity: 0;
+  padding: 0;
+  transform: translateX(-50%) translateY(100%);
+  background-color: rgba(255,255,255,0);
+}
+
+    .Scroll-progress-indicator.visible {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+    }
+
+
+    .Scroll-to-top {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  background-color: rgba(255,255,255,0);
+  border: none;
+  color: #1691b2;
+  font-size: 1.0rem;
+  padding: 0.5em;
+  cursor: pointer;
+  opacity:  0;
+  transform: translateY(100%);
+  transition: all 0.3s;
+  outline: none;
+    }
+
+    .Scroll-to-top.visible { 
+  opacity: 1;
+  transform: translateY(0);
+    }
+
+    .Scroll-to-top:hover {
+  color: #F5DF4D;
+    }
+
+    
+    
+
+    
+
+    
+.popup{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9995;
+}
+    .popup__block::-webkit-scrollbar{
+        width: 10px;
+    }
+    .popup__block::-webkit-scrollbar-thumb {
+        background-color: #1691b2;
+        border-radius: 10px;
+    }
+    .popup--block::-webkit-scrollbar-track {
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 5px white;
+    }
+
+.popup img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .popup .scene{
+        width: 49.7%;
+        height: auto;
+    }
+    
+    .popup .object_modal01{
+        width: 49.7%;
+        height: auto;
+    }
+    
+    .popup .transition_modal01 {
+        width: 33%;
+        height: auto;
+    }
+    
+    
+    
+    
+    .popup iframe{
+        width: 100%;
+        height: 56.25%;
+    }
+
+    #modal00:target{
+        display: flex;
+    }
+    #modal01:target{
+        display: flex;
+    }
+        #modal02:target{
+        display: flex;
+    }
+        #modal03:target{
+        display: flex;
+    }
+        #modal04:target{
+        display: flex;
+    }
+        #modal05:target{
+        display: flex;
+    }
+        #modal06:target{
+        display: flex;
+    }
+        #modal07:target{
+        display: flex;
+    }
+        #modal08:target{
+        display: flex;
+    }
+         #modal09:target{
+        display: flex;
+    }
+        #modal10:target{
+        display: flex;
+    }
+        #modal11:target{
+        display: flex;
+    }
+        #modal12:target{
+        display: flex;
+    }
+        #modal13:target{
+        display: flex;
+    }
+        #modal14:target{
+        display: flex;
+    }
+        #modal15:target{
+        display: flex;
+    }
+        #modal16:target{
+        display: flex;
+    }
+        #modal17:target{
+        display: flex;
+    }
+        #modal18:target{
+        display: flex;
+    }
+    
+
+.popup::before{
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  will-change: height, top;
+  animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
+    
+}
+
+.popup::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  will-change: width, opacity;
+  animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+
+@keyframes line-animation{
+
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+
+  99%{
+    width: 100%;
+    opacity: 1;
+  }
+
+  100%{
+    width: 100%;
+    opacity: 0;
+  }  
+}
+
+@keyframes open-animation{
+
+  0%{
+    height: 0;
+    top: 50%;
+  }
+
+  100%{
+    height: 100vh;
+    top: 0;
+  }
+}
+
+.popup__block{
+    width: 60%;
+  height: calc(100vh - 40px);
+    background-color: rgba(0,0,0,1);
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  animation: fade .5s ease-out 1.3s both;    
+    }
+
+    
+    
+@keyframes fade{
+
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+    .popclose{
+        color: #8d9092;
+        font-size: 5em;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        right: 17%;
+        text-decoration: none;
+    }
+
+    .popclose:hover {
+        color: #1691b2;
+    }
+    
+    
+
+    .footer {
+        background-color: black;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 15%;
+    }
+    .footer_contents {
+        margin-top: 5%;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    
+    
+    .footer h1 {
+        font-weight: 400;
+        font-size: 1.2em;
+        color: #424242;
+    }
+    
+    
+    .footer_logo {
+        margin-bottom: 15%;
+        
+    }
+        
+    .footer_left {
+        display: inline-table;
+        text-align: right;
+        margin-right: 5%;
+        width: 20%;
+        padding-top: 2%;
+    }
+    
+    
+    .footer_left .footer_icon {
+        height: 0.9em;
+        fill: #828282;
+        vertical-align: middle;
+    }
+    .footer_left span {
+        font-size: 1ex;
+        font-weight: 600;
+        vertical-align: middle;
+    }
+
+    .footer_left h4 {
+        text-align: right;
+    }
+    
+    
+    .footer_right {
+        display: inline-table;
+        width: 20%;
+    }
+    
+    
+    .form {
+        width:100%;
+        height: auto;
+        background: 0;
+        margin: 0 auto;
+        box-sizing:border-box;
+        position:relative;
+        text-align: left;
+        color: #828282;
+        font-weight: 600;
+    }
+    
+    .mail-form {
+        color: white;
+        background-color: #141414;
+        width: 100%;
+        margin-top: 2%;
+        padding: 2% 1%;
+        box-sizing:border-box;
+        outline:none;
+        border: 0;
+        transition:all .3s;
+        border-bottom: 2px solid #1687a8;
+    }
+    
+    .mail-form:focus {
+        border-bottom: 2px solid #4ae6e6;
+    }
+    
+    .footer p:before {
+        content:attr(type);
+        display:block;
+        font-size: 0.5em;
+        color:#5a5a5a;
+    }
+    .submit_btn {
+        width: 20%;
+        text-align: right;
+        float:right;
+        padding: 8px 15px;
+        background: #1687a8;
+        color:#fff;
+        border: none;
+        cursor:pointer;
+        transition:all .2s;
+    }
+    .submit_btn:hover{
+        background:#4ae6e6;
+        color:#fff;
+    }
+    
+    
+    .branding {
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        padding-top: 5%;
+        padding-bottom: 0;
+        padding-right: 20%;
+        padding-left: 20%;
+        
+    }
+    
+    .branding figure {
+        background-color: #191919;
+    }
+    
+    .branding figure:hover {
+        background-color: white;
+    }     
+    
+    .branding figure a {
+        width: 30%;
+        text-align: center;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+
+    
+    
+    figure img {
+        width: 100%;
+    }
+
+    .design_text {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        
+    }
+        
+    .design_text h1 {
+        color: black;
+        font-size: 0.6em;
+        margin: 1;
+    }
+    
+    .design_text h2 {
+        color: black;
+        font-size: 0.4em;
+        font-weight: 400;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+</head>
+<body id="bodied">
+<div class="contents">
+    <!--div class="head_logo" style="text-align: center;">
+        <img src="thumbnail/PI.png">
+    </div-->
+<nav class="Quick-navigation">
+    <hr class="right_line">
+    <a href="#main-top" class="Quick-navigation-item">Motiongraphics Showreel</a>
+    <a href="#pt001" class="Quick-navigation-item">HITEJINRO Promotion</a>
+    <a href="#pt002" class="Quick-navigation-item">MBC Rating Notification</a>
+    <a href="#pt003" class="Quick-navigation-item">Tiger is Coming - Inalchi</a>
+    <a href="#pt004" class="Quick-navigation-item">Logo Animation</a>
+    <a href="#pt005" class="Quick-navigation-item">Webtoon Promotion [Lazyman]</a>
+    <a href="#pt006" class="Quick-navigation-item">2020 Nike Summer Week</a>
+    <a href="#pt007" class="Quick-navigation-item">GyeongGi-Do Peace UCC Contest</a>
+    <a href="#pt008" class="Quick-navigation-item">KIDA 40th Anniversary</a>
+    <a href="#pt009" class="Quick-navigation-item">KIDA NASA INSIGHT 2019</a>
+    <hr class="right_line">
+    <a href="#pt010" class="Quick-navigation-item">Branding Design</a>
+    <a href="#uxui" class="Quick-navigation-item">UX / UI Design</a>
+    <a href="#pt012" class="Quick-navigation-item">Webtoon / Illustration</a>
+    <div class="Scroll-progress-indicator"></div>
+    </nav>
+    
+<div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+  </div>
+</div>
+    <div class="left">
+        <hr class="left_line">
+        <br>
+        <h1>Hello!</h1>
+        <h1>I'm MinGyu Jeon.</h1>
+        <p></p>
+        <h3>a graphic designer</h3>
+        <h3>based in korea.</h3>
+        <h3>I design for viewers</h3>
+        <h3>at the center of</h3>
+        <h3>2D&#38;3D Motion Graphics.</h3>
+        <br>
+        <a href="#" class="resumedown"><h4 class="plusbtn">&#43;&#160;&#160;<span class="about">About Me</span></h4></a>
+        <br>
+        <br>
+        <div class="icons">
+        <a href="mailto:jmk032@naver.com">
+        <svg height="512pt" viewBox="0 0 512 512.00006" xmlns="http://www.w3.org/2000/svg" class="mail_icon">
+            <path d="M467,80.609H45c-24.813,0-45,20.187-45,45v260.782c0,24.813,20.187,45,45,45h422c24.813,0,45-20.187,45-45V125.609
+			C512,100.796,491.813,80.609,467,80.609z M461.127,110.609l-6.006,5.001L273.854,266.551c-10.346,8.614-25.364,8.614-35.708,0
+			L56.879,115.61l-6.006-5.001H461.127z M30,132.267L177.692,255.25L30,353.543V132.267z M467,401.391H45
+			c-7.248,0-13.31-5.168-14.699-12.011l171.445-114.101l17.204,14.326c10.734,8.938,23.893,13.407,37.051,13.407
+			c13.158,0,26.316-4.469,37.051-13.407l17.204-14.326l171.444,114.1C480.31,396.224,474.248,401.391,467,401.391z M482,353.543
+			l-147.692-98.292L482,132.267V353.543z"/>
+            </svg></a>
+        <a href="tel:+821092500867">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="phone_icon">
+		<path d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4
+			c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8
+			c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6
+			c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5
+			c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26
+			c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9
+			c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806
+			C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20
+			c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6
+			c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1
+			c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3
+			c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5
+			c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8
+			c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9
+			l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1
+			C420.456,377.706,420.456,388.206,410.256,398.806z"/>
+		<path d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2
+			c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11
+			S248.656,111.506,256.056,112.706z"/>
+		<path d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11
+			c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2
+			c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"/>
+            </svg></a>
+        </div>
+    </div>
+
+    
+    
+
+    
+    <div class="portfolio">
+  <div class="row">
+    <div class="third">
+        <section id="main-top" class="js-scroll-step">
+            <a href="#modal00" class="open-popup">
+                    <img src="img/pi_logo.gif" style="width: 100%" onclick="onClick(this)" alt="hello">
+                </a>
+        </section>
+        <section id="pt001" class="js-scroll-step">
+            <a href="#modal01" class="open-popup">
+                <img src="thumbnail/hitejinro.gif" style="width:100%" onclick="onClick(this)" alt="HiteJinro" class="charm">
+            </a>
+        </section>
+        <section id="pt002" class="js-scroll-step">
+            <a href="#modal02" class="open-popup">
+                <img src="thumbnail/mbc.gif" style="width:100%" onclick="onClick(this)" alt="MBC 연령고지" class="mbc_age" id="mbc">
+            </a>
+        </section>
+        <section id="pt003" class="js-scroll-step">
+            <a href="#modal03" class="open-popup">
+                <img src="thumbnail/tiger.gif" style="width:100%" onclick="onClick(this)" alt="Tiger is Coming" class="tigerboom">    
+            </a>
+        </section>
+        <section id="pt004" class="js-scroll-step">
+            <a href="#modal04" class="open-popup">
+                <img src="thumbnail/Nike_Logo.gif" style="width:100%" onclick="onClick(this)" alt="Logoanimation" class="nike_logo">
+            </a>
+        </section>
+        <section id="pt005" class="js-scroll-step">
+            <a href="#modal05" class="open-popup">
+                <img src="thumbnail/lazyman.gif" style="width:100%" onclick="onClick(this)" alt="lazyman" class="webtoon_promo">
+            </a>
+        </section>
+        <section id="pt006" class="js-scroll-step">
+            <a href="#modal06" class="open-popup">
+                <img src="thumbnail/summerweek.gif" style="width:100%" onclick="onClick(this)" alt="2020 nike summer week" class="nike_summer">
+            </a>
+        </section>
+        <section id="pt007" class="js-scroll-step">
+            <a href="#modal07" class="open-popup">
+                <img src="thumbnail/ggd2.gif" style="width:100%" onclick="onClick(this)" alt="2020 경기도 평화정책 UCC 공모전 본선" class="ggd_final"> 
+            </a>
+        </section>
+        <section id="pt008" class="js-scroll-step">
+            <a href="#modal08" class="open-popup">
+                <img src="thumbnail/kida40.gif" style="width:100%" onclick="onClick(this)" alt="KIDA 40th Anniversary" class="kida_40"> 
+            </a>
+        </section>
+        <section id="pt009" class="js-scroll-step">
+            <a href="#modal09" class="open-popup">
+        <img src="thumbnail/nasa.gif" style="width:100%" onclick="onClick(this)" alt="KIDA NASA INSIGHT" class="kida_nasa";>
+            </a>
+        </section>
+
+        
+        
+        <article id="pt010" class="js-scroll-step">
+                <div class="branding">
+                        <figure>
+                            <a href="#modal10" class="open-popup">
+                            <img src="thumbnail/2d_01.png">
+                        <figcaption class="design_text">
+                            <h1>Personal Identity</h1><h2><br>본인을 컨셉화하여 브랜드화 시킨<br>Identity / Logo 디자인</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal11" class="open-popup">
+                            <img src="thumbnail/2d_02.png">
+                        <figcaption class="design_text">
+                            <h1>BEERS-CHEERS</h1><h2><br>스몰비어 브랜드 BEERS-CHEERS의<br>BI / Package 디자인</h2>
+                        </figcaption>
+                            </a>    
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal12" class="open-popup">
+                            <img src="thumbnail/2d_03.png">
+                        <figcaption class="design_text">
+                            <h1>GMoMA</h1><h2><br>경기도 시립 미술관의 리브랜딩<br>Identity / Logo 디자인</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                </div>
+        </article>
+        
+          <section id="uxui" class="js-scroll-step">
+           <div class="branding">
+                        <figure>
+                            <a href="#modal13" class="open-popup">
+                            <img src="thumbnail/2d_04.png">
+                        <figcaption class="design_text">
+                            <h1>Top of Himalaya</h1><h2>아웃도어 브랜드 The North Face의<br>프로모션을 위해 제작되어진<br>Mobile Game App / UX / UI 디자인</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal14" class="open-popup">
+                            <img src="thumbnail/2d_05.png">
+                        <figcaption class="design_text">
+                            <h1>LAOS</h1><h2><br>올바른 그래피티 문화를 알리고자 제작되어진<br>Mobile Game App / UX / UI 디자인</h2>
+                        </figcaption>
+                            </a>    
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal15" class="open-popup">
+                            <img src="thumbnail/2d_06.png">
+                        <figcaption class="design_text">
+                            <h1>FACE PAINTER</h1><h2><br>인사동 거리의 외국인 관광객 유치를 위한<br>KIOSK 용 프로모션 / UX / UI 디자인</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                </div>
+        </section>
+        
+          <section id="pt012" class="js-scroll-step">
+              <div class="branding">
+                        <figure>
+                            <a href="#modal16" class="open-popup">
+                            <img src="thumbnail/2d_07.png">
+                        <figcaption class="design_text">
+                            <h1>Lazy man</h1><h2>2017년 네이버 최강자전을 위해 제작된<br>히어로물의 빌런을 주인공으로 한 안티 히어로물<br>Webtoon</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal17" class="open-popup">
+                            <img src="thumbnail/2d_08.png">
+                        <figcaption class="design_text">
+                            <h1>Bulga</h1><h2>2018년 네이버 최강자전을 위해 제작된<br>한국 전통요괴 불가사리에 관한<br>Webtoon</h2>
+                        </figcaption>
+                            </a>    
+                        </figure>
+                    
+                    
+                        <figure>
+                            <a href="#modal18" class="open-popup">
+                            <img src="thumbnail/2d_09.png">
+                        <figcaption class="design_text">
+                            <h1>Paralympic Games</h1><h2>패럴림픽의 홍보를 주제로<br>2014년 동아리 연합 전시회 'PI전'에 제출한<br>Illustration</h2>
+                        </figcaption>
+                            </a>
+                        </figure>
+                </div>
+        </section>
+        
+                    
+            <section id="pt014" class="js-scroll-step">
+            <div class="footer">
+                <h1>
+                    Thanks for watching my portfolio.
+                </h1>
+                <div class="footer_contents">
+                <div class="footer_left">
+                    <img src="img/logo.png" class="footer_logo">
+                    <h4>
+                        <svg viewBox="0 0 512 512.00006" xmlns="http://www.w3.org/2000/svg" class="footer_icon">
+                        <path d="M467,80.609H45c-24.813,0-45,20.187-45,45v260.782c0,24.813,20.187,45,45,45h422c24.813,0,45-20.187,45-45V125.609
+                                 C512,100.796,491.813,80.609,467,80.609z M461.127,110.609l-6.006,5.001L273.854,266.551c-10.346,8.614-25.364,8.614-35.708,0
+                                 L56.879,115.61l-6.006-5.001H461.127z M30,132.267L177.692,255.25L30,353.543V132.267z M467,401.391H45
+                                 c-7.248,0-13.31-5.168-14.699-12.011l171.445-114.101l17.204,14.326c10.734,8.938,23.893,13.407,37.051,13.407
+                                 c13.158,0,26.316-4.469,37.051-13.407l17.204-14.326l171.444,114.1C480.31,396.224,474.248,401.391,467,401.391z M482,353.543
+                                 l-147.692-98.292L482,132.267V353.543z"/>
+                        </svg>
+                        &nbsp;&nbsp;&nbsp;<span>jmk032@naver.com</span>
+                    </h4>
+                    <h4>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="footer_icon">
+                            <path d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4
+                                     c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8
+                                     c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6
+                                     c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5
+                                     c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26
+                                     c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9
+                                     c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806
+                                     C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20
+                                     c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6
+                                     c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1
+                                     c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3
+                                     c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5
+                                     c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8
+                                     c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9
+                                     l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1
+                                     C420.456,377.706,420.456,388.206,410.256,398.806z"/>
+		                      <path d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2
+                                       c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11
+                                       S248.656,111.506,256.056,112.706z"/>
+                            <path d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11
+			                         c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2
+			                         c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"/>
+                        </svg>
+                        &nbsp;&nbsp;&nbsp;<span>+82) 10 . 9250 . 0867</span>
+                    </h4>
+                
+                
+                
+                </div>
+                
+                
+                <div class="footer_right">
+                    <form class="form" id="contact-form">
+                        <p type="Your name">
+                            <input type="text" placeholder="" name="name" class="mail-form">
+                        </p>
+                        <p type="Your email">
+                            <input type="text" placeholder="" name="email" class="mail-form">
+                        </p>
+                        <p type="Please enter your message">
+                            <textarea name="message" rows="1" placeholder="" class="mail-form"></textarea>
+                        </p>
+                        <input type="button" name="submit" class="submit_btn" value="SUBMIT"/>
+                    </form>
+                </div>
+                    </div>
+            </div>
+            </section>
+            
+        
+        
+        
+        
+        
+        
+    </div>
+    </div>
+  </div>
+    
+    
+
+        
+    
+        <!-- portfolio contents popup //-->
+
+    
+    
+        <div id="modal00" class="popup">
+            <div class="popup__block">
+                <a href="#pt000" class="popclose">&times;</a>
+                <iframe class="youtube" src="https://www.youtube.com/embed/Q3IePbhRLQo?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info00.jpg">
+            </div>
+        </div>
+    
+        <div id="modal01" class="popup">
+            <div class="popup__block">
+                <a href="#pt001" class="popclose">&times;</a>
+                <iframe class="youtube" src="https://www.youtube.com/embed/XFYjbfZKpIw?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info01.jpg">
+            </div>
+        </div>
+
+            <div id="modal02" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/eDdij_V1lNQ?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write;gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info02.jpg">
+                
+                <a href="#pt002" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    
+            <div id="modal03" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/hVFtbu2XDBo?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write;gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info03.jpg">
+                
+                <a href="#pt003" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    
+            <div id="modal04" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/wfp6ImoAJXU?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write;gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <img src="img/infor/info04.jpg">
+                
+                <a href="#pt004" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    
+            <div id="modal05" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/Ixlja7Mtrh8?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info05.jpg">
+                
+                <a href="#pt005" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    
+            <div id="modal06" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/Ue5OYgcQo1A?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info06.jpg">
+                
+                <a href="#pt006" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    
+            <div id="modal07" class="popup">
+            <div class="popup__block">
+                
+                <iframe class="youtube" src="https://www.youtube.com/embed/4G2TqeumIuk?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="youtube" src="https://www.youtube.com/embed/19BjUauOq5A?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info07.jpg">
+                
+                <a href="#pt007" class="popclose">&times;</a>
+            </div>
+        </div>
+
+    <div id="modal08" class="popup">
+            <div class="popup__block">
+                <a href="#pt008" class="popclose">&times;</a>
+                <iframe class="youtube" src="https://www.youtube.com/embed/97tfUxWdxD4?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info08.jpg">
+                
+            </div>
+        </div>
+    
+     <div id="modal09" class="popup">
+            <div class="popup__block">
+                <a href="#pt009" class="popclose">&times;</a>
+                <iframe class="youtube" src="https://www.youtube.com/embed/yCerr_mFBcE?rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="img/infor/info09.jpg">
+            </div>
+        </div>
+
+
+    
+         <div id="modal11" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/modal10.jpg">
+                <img src="img/modal10-1.jpg">
+                <img src="img/modal10-2.jpg">
+                <img src="img/modal10-3.jpg">
+                <img src="img/modal10-4.jpg">
+                
+                <a href="#pt010" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal12" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/gmoma.jpg">
+                
+                <a href="#pt010" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal13" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/northface/001.jpg">
+                <img src="img/northface/002.jpg">
+                <img src="img/northface/003.jpg">
+                <img src="img/northface/004.jpg">
+                <img src="img/northface/005.jpg">
+                <img src="img/northface/006.jpg">
+                <img src="img/northface/007.jpg">
+                <img src="img/northface/008.jpg">
+                <img src="img/northface/009.jpg">
+                <img src="img/northface/010.jpg">
+                <img src="img/northface/011.jpg">
+                
+                <a href="#pt011" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal14" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/LAOS1.jpg">
+                <img src="img/LAOS2.jpg">
+                <img src="img/LAOS3.jpg">
+                
+                <a href="#pt011" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal15" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/facepainter.jpg">
+                
+                <a href="#pt011" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal16" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/webtoon/lazyman1.jpg">
+                <img src="img/webtoon/lazyman2.jpg">
+                <img src="img/webtoon/lazyman3.jpg">
+                <img src="img/webtoon/lazyman4.jpg">
+                <img src="img/webtoon/lazyman5.jpg">
+                
+                <a href="#pt012" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal17" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/webtoon/bulga1.jpg">
+                <img src="img/webtoon/bulga2.jpg">
+                <img src="img/webtoon/bulga3.jpg">
+                <img src="img/webtoon/bulga4.jpg">
+                <img src="img/webtoon/bulga5.jpg">
+                
+                <a href="#pt012" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+        <div id="modal18" class="popup">
+            <div class="popup__block">
+                
+                <img src="img/paralympic.jpg">
+                
+                <a href="#pt012" class="popclose">&times;</a>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    <div class="right">
+        
+        <button class="Scroll-to-top">TOP&#9650;</button>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script type="text/javascript">
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        (function () {
+		
+    function throttle(fn, delay, scope) {
+        // Default delay
+        delay = delay || 20;
+        var last, defer;
+        return function () {
+            var context = scope || this,
+                now = +new Date(),
+                args = arguments;
+            if (last && now < last + delay) {
+                clearTimeout(defer);
+                defer = setTimeout(function () {
+                    last = now;
+                    fn.apply(context, args);
+                }, delay);
+            } else {
+                last = now;
+                fn.apply(context, args);
+            }
+        }
+    }
+
+    function extend(destination, source) {
+        for (var k in source) {
+            if (source.hasOwnProperty(k)) {
+                destination[k] = source[k];
+            }
+        }
+        return destination;
+    }
+  
+    var ScrollManager = (function () {
+
+        var defaults = {
+
+                steps: null,
+                navigationContainer: null,
+                links: null,
+                scrollToTopBtn: null,
+
+                navigationElementClass: '.Quick-navigation',
+                currentStepClass: 'current',
+                smoothScrollEnabled: true,
+                stepsCheckEnabled: true,
+
+                onScroll: null,
+
+                onStepChange: function (step) {
+                    var self = this;
+                    var relativeLink = [].filter.call(options.links, function (link) {
+                        link.classList.remove(self.currentStepClass);
+                        return link.hash === '#' + step.id;
+                    });
+                    relativeLink[0].classList.add(self.currentStepClass);
+                },
+
+                // Provide a default scroll animation
+                smoothScrollAnimation: function (target) {
+                    $('html, body').animate({
+                        scrollTop: target
+                    }, 'slow');
+                }
+            },
+
+            options = {};
+
+        var _animation = null,
+            currentStep = null,
+            throttledGetScrollPosition = null;
+
+        return {
+
+            scrollPosition: 0,
+
+            init: function (opts) {
+
+                options = extend(defaults, opts);
+
+                if (options.steps === null) {
+                    console.warn('Smooth scrolling require some sections or steps to scroll to :)');
+                    return false;
+                }
+
+                // Allow to customize the animation engine ( jQuery / GSAP / velocity / ... )
+                _animation = function (target) {
+                    target = typeof target === 'number' ? target : $(target).offset().top;
+                    return options.smoothScrollAnimation(target);
+                };
+
+                // Activate smooth scrolling
+                if (options.smoothScrollEnabled)  this.smoothScroll();
+
+                // Scroll to top handling
+                if (options.scrollToTopBtn) {
+                    options.scrollToTopBtn.addEventListener('click', function () {
+                        options.smoothScrollAnimation(0);
+                    });
+                }
+
+                // Throttle for performances gain
+                throttledGetScrollPosition = throttle(this.getScrollPosition).bind(this);
+                window.addEventListener('scroll', throttledGetScrollPosition);
+                window.addEventListener('resize', throttledGetScrollPosition);
+
+                this.getScrollPosition();
+            },
+
+            getScrollPosition: function () {
+                this.scrollPosition = window.pageYOffset || window.scrollY;
+                if (options.stepsCheckEnabled) this.checkActiveStep();
+                if (typeof  options.onScroll === 'function') options.onScroll(this.scrollPosition);
+            },
+
+            scrollPercentage: function () {
+                var body = document.body,
+                    html = document.documentElement,
+                    documentHeight = Math.max(body.scrollHeight, body.offsetHeight,
+                        html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+                var percentage = Math.round(this.scrollPosition / (documentHeight - window.innerHeight) * 100);
+                if (percentage < 0)  percentage = 0;
+                if (percentage > 100)  percentage = 100;
+                return percentage;
+            },
+
+            doSmoothScroll: function (e) {
+                if (e.target.nodeName === 'A') {
+                    e.preventDefault();
+                    if (location.pathname.replace(/^\//, '') === e.target.pathname.replace(/^\//, '') && location.hostname === e.target.hostname) {
+                        var targetStep = document.querySelector(e.target.hash);
+                        targetStep ? _animation(targetStep) : console.warn('Hi! You should give an animation callback function to the Scroller module! :)');
+                    }
+                }
+            },
+
+            smoothScroll: function () {
+                if (options.navigationContainer !== null) options.navigationContainer.addEventListener('click', this.doSmoothScroll);
+            },
+
+            checkActiveStep: function () {
+                var scrollPosition = this.scrollPosition;
+
+                [].forEach.call(options.steps, function (step) {
+                    var bBox = step.getBoundingClientRect(),
+                        position = step.offsetTop,
+                        height = position + bBox.height;
+
+                    if (scrollPosition >= position && scrollPosition < height && currentStep !== step) {
+                        currentStep = step;
+                        step.classList.add(self.currentStepClass);
+                        if (typeof options.onStepChange === 'function') options.onStepChange(step);
+                    }
+                    step.classList.remove(options.currentStepClass);
+                });
+            },
+
+            destroy: function () {
+                window.removeEventListener('scroll', throttledGetScrollPosition);
+                window.removeEventListener('resize', throttledGetScrollPosition);
+                options.navigationContainer.removeEventListener('click', this.doSmoothScroll);
+            }
+        }
+    })();
+
+
+    var scrollToTopBtn = document.querySelector('.Scroll-to-top'),
+        steps = document.querySelectorAll('.js-scroll-step'),
+        navigationContainer = document.querySelector('.Quick-navigation'),
+        links = navigationContainer.querySelectorAll('a'),
+        progressIndicator = document.querySelector('.Scroll-progress-indicator');
+
+    ScrollManager.init({
+        steps: steps,
+        scrollToTopBtn: scrollToTopBtn,
+        navigationContainer: navigationContainer,
+        links: links,
+      
+        onScroll: function () {
+            var percentage = ScrollManager.scrollPercentage();
+            percentage >= 90 ? scrollToTopBtn.classList.add('visible') : scrollToTopBtn.classList.remove('visible');
+
+            if (percentage >= 10) {
+                progressIndicator.innerHTML = percentage + "%";
+                progressIndicator.classList.add('visible');
+            } else {
+                progressIndicator.classList.remove('visible');
+            }
+        },
+      
+
+    });
+  
+
+})();
+  
+
+   
+        
+        
+$(document).ready(function() {
+		emailjs.init("user_SCvWs0360jQulqAI7D760");		
+        $('input[name=submit]').click(function(){       	 
+          
+          var templateParams = {	
+          //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                name: $('input[name=name]').val(), 
+                email : $('input[name=email]').val(),
+                message : $('textarea[name=message]').val()
+           				};
+                    
+                	
+         emailjs.send('service_lnna4rw', 'template_hf96n79', templateParams)
+         //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+         	    .then(function(response) {
+         	       console.log('SUCCESS!', response.status, response.text);
+         	    }, function(error) {
+         	       console.log('FAILED...', error);
+         	    });
+         	       
+
+
+        });
+        
+	  });        
+        
+
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		}
+  });
+};    
+
+$(document).ready(function(){
+    $('.popup').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+});
+             
+        
+        
+        
+    </script>
+    </body>
+    </html>
